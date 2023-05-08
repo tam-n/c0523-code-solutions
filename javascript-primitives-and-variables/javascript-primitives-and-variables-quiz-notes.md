@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do you **declare** a variable?
   To declare a variable, you use the keywords var, let, or const
 - How do you initialize (**assign a value to**) a variable?
-  You assign a variable using the equal ('=') operator.
+  You assign a value to a variable using the equal ('=') operator.
 - What characters are allowed in variable names?
   Variable names can only contain letters, numbers, or dollarsign ($) and underscores (\_). However, the first character cannot be a number.
 - What does it mean to say that variable names are "case sensitive"?
