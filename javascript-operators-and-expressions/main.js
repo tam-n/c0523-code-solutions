@@ -16,7 +16,7 @@ const final = 76;
 const grade = (quizzes + midterm + final) / 3;
 
 console.log('Value of grade:', grade);
-console.log('Type of grade:', grade);
+console.log('Type of grade:', typeof grade);
 
 const firstName = 'Tam';
 const lastName = 'Nguyen';
