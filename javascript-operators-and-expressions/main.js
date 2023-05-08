@@ -4,9 +4,9 @@ const area = width * height;
 console.log('Value of area:', area);
 console.log('Type of area:', typeof area);
 
-const bill = 14;
-const payment = 12;
-const change = bill - payment;
+const bill = 12;
+const payment = 14;
+const change = payment - bill;
 console.log('Value of change:', change);
 console.log('Type of change:', typeof change);
 
