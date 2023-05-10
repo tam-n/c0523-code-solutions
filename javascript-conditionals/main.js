@@ -36,9 +36,9 @@ function isOldEnoughToDrinkAndDrive(person) {
 function categorizeAcidity(pH) {
   if (pH === 7) {
     return 'neutral';
-  } else if (pH < 7) {
+  } else if (pH < 7 && pH >= 0) {
     return 'acid';
-  } else if (pH > 7) {
+  } else if (pH > 7 && pH <= 14) {
     return 'base';
   } else {
     return 'invalid pH level';
