@@ -9,9 +9,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - How do inline elements affect the document flow?
   Inline elements are aligned next to each other horizontally or vertically depending on their mode.
 - What are the default width and height of a block-level element?
-  150px
+  The default size is 100% of the page
 - What are the default width and height of an inline element?
-  150px
+  the default size of it's content
 
 ## Notes
 
