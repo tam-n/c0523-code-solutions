@@ -5,10 +5,11 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - Give five examples of HTML element types.
-
+  head, body, p, h1, title
 - What is the purpose of HTML attributes?
-
+  The purpose of html attributes is to give additional information and provide functionality to elements.
 - Give an example of an HTML entity (escape character).
+  HTML entities include <, >, &, etc.
 
 ## Notes
 
