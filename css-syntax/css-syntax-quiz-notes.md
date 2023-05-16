@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the names of the individual pieces of a CSS rule?
-
+  Selector, property, and value
 - In CSS, how do you select elements by their `class` attribute?
-
+  using the dot(.) character
 - In CSS, how do you select elements by their tag name?
-
+  using the element tag name
 - In CSS, how do you select an element by its `id` attribute?
+  Using a #
 
 ## Notes
 
