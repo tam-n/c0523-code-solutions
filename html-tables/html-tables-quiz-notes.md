@@ -5,9 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the six primary HTML elements for creating tables?
-  `table`, `thead`, `tbody`, `tfoot`, `tr`, `td`
+  `table`, `thead`, `tbody`, `th`, `tr`, `td`
 - What purpose do the `thead` and `tbody` elements serve?
-  thead is used to create the headers for the table, tbody will contain the table rows
+  thead is used to create the headers for the table, tbody will contain the table rows it also makes targeting data with CSS easier
 - Give two examples of data that would lend itself well to being displayed in a table.
   person and age; day of the week
 
