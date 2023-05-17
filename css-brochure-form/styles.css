@@ -1,0 +1,54 @@
+form {
+  width: 475px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  color: rgb(236, 93, 87);
+}
+
+div > label {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 15px;
+}
+
+label > input {
+  display: block;
+  border-radius: 5px;
+  width: 475px;
+  height: 40px;
+  padding: 15px;
+  margin: 4px;
+  border-color: lightgray;
+}
+
+input::placeholder {
+  font-family: AtlasGrotesk, sans-serif;
+  font-weight: 300;
+}
+
+select {
+  width: 475px;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 4px;
+  background-color: rgb(243, 243, 243);
+}
+
+button {
+  float: right;
+  border-radius: 30px;
+  width: 90px;
+  height: 40px;
+  border: 0;
+  margin: 10px;
+  background-color: rgb(236, 93, 87);
+  color: white;
+}
