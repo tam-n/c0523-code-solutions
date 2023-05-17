@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - Name two types of units that can be used to adjust `font-size` in CSS.
-  Absolute size, relative size, or math keywords and as a length or percentage.
+  pixels and rem
 - What CSS property controls the font used for the text inside an element?
   Font-family
 
