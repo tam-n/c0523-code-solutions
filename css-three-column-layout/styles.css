@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(25, 150, 218);
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column-full {
+  padding: 40px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.column-image-container {
+  background-color: white;
+  border-radius: 50%;
+  padding: 25px;
+  flex-basis: 10%;
+}
+
+.column-text {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  margin: 15px;
+}
+
+img {
+  width: 100%;
+}
