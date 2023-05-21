@@ -1,0 +1,220 @@
+* {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row-header {
+  display: flex;
+  position: fixed;
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(238, 239, 241);
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px;
+}
+
+.logo {
+  flex-basis: 50%;
+  margin-left: 50px;
+}
+
+.header-links {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+
+.product-link {
+  flex-basis: 25%;
+}
+
+.implementation-link {
+  flex-basis: 25%;
+}
+
+.about-us-link {
+  flex-basis: 25%;
+}
+
+.blog-link {
+  flex-basis: 25%;
+}
+
+.button-contact {
+  margin-left: 40px;
+  width: 150px;
+  height: 40px;
+  background-color: rgb(41, 68, 100);
+  color: white;
+  border-radius: 5px;
+}
+
+.row-image {
+  display: flex;
+  height: 900px;
+  background-image: url('images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 300px;
+  filter: grayscale(35%);
+  z-index: 0;
+}
+
+.emr-reimagined {
+  display: flex;
+  flex-basis: 43%;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 120px;
+  color: white;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.emr-reimagined > h1 {
+  line-height: 70px;
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+}
+
+.button-emr {
+  width: 300px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: rgb(41, 68, 100);
+  color: white;
+  font-size: 1.5rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+}
+
+.row-address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+  margin-top: 60px;
+  line-height: 40px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(110, 110, 110);
+}
+
+.clinicians-prefer {
+  flex-basis: 35%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2,
+h3 {
+  font-family: 'Tiempos Headline', sans-serif;
+  font-style: normal;
+}
+
+.locations {
+  flex-basis: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.row-ready-to-learn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ready-to-learn {
+  flex-basis: 40%;
+  text-align: left;
+  color: rgb(110, 110, 110);
+  font-size: 18px;
+}
+
+.get-started {
+  display: flex;
+  flex-basis: 15%;
+  align-items: center;
+}
+
+.get-started > button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgb(41, 68, 100);
+  color: white;
+  font-size: 20px;
+}
+
+.row-contact-info {
+  display: flex;
+  background-color: rgb(82, 83, 81);
+  height: 250px;
+  color: white;
+  align-items: top;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.canvas-address {
+  flex-basis: 60%;
+}
+
+.canvas-address > img {
+  width: 25%;
+  margin-bottom: 30px;
+}
+
+ul.style-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  padding-top: 10px;
+}
+
+.row-contact-right {
+  flex-basis: 20%;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.footer {
+  display: flex;
+  width: 20%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(250, 250, 250);
+  padding-left: 50px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
