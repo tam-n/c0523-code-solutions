@@ -15,9 +15,9 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a callback function?
   A function called within a function
 - What object is passed into an event listener callback when the event fires?
-  The document object
+  The event object
 - What is the `event.target`? If you weren't sure, how would you check? Where could you get more information about it?
-  It is the target property of the document object. If you weren't sure you can console log it to check on the browser console
+  It is the target property of the event object. If you weren't sure you can console log it to check on the browser console
 - What is the difference between these two snippets of code?
   ```js
   element.addEventListener('click', handleClick);
