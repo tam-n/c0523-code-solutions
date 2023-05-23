@@ -1,0 +1,35 @@
+.container-on {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  background-color: rgb(255, 251, 218);
+}
+
+.container-off {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 100%;
+  background-color: rgb(13, 13, 13);
+}
+
+.button-on {
+  flex-basis: 300px;
+  border-radius: 50%;
+  height: 300px;
+  background-color: rgb(250, 234, 132);
+  border: none;
+  box-shadow: 0 0 3px 3px rgb(250, 234, 132);
+}
+
+.button-off {
+  flex-basis: 300px;
+  border-radius: 50%;
+  height: 300px;
+  background-color: rgb(19, 19, 18);
+  border: none;
+  box-shadow: 0 0 3px 3px rgb(55, 55, 55);
+}
