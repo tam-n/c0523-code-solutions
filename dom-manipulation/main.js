@@ -26,5 +26,4 @@ $hotButton.addEventListener('click', function (event) {
       $hotButton.className = 'hot-button nuclear';
       break;
   }
-  console.log($hotButton);
 });
