@@ -17,10 +17,10 @@ const library = [
 ];
 
 console.log('Type of array of books:', typeof library);
-console.log(JSON.stringify(typeof Array));
+console.log('Type of JSON stringify:', JSON.stringify(typeof Array));
 
 const json = '{"id": "12345", "name": "Mary"}';
-console.log(typeof json);
+console.log('Type of JSON:', typeof json);
 
 const jsonObject = JSON.parse(json);
-console.log(jsonObject);
+console.log('Type of JSON parse:', jsonObject);
