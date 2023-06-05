@@ -15,12 +15,16 @@ const library = [
     author: 'Cormac McCarthy',
   },
 ];
-
+console.log('Value of array of books:', library);
 console.log('Type of array of books:', typeof library);
-console.log('Type of JSON stringify:', JSON.stringify(typeof Array));
+
+console.log('Value of JSON stringify:', JSON.stringify(library));
+console.log('Type of JSON stringify:', JSON.stringify(typeof library));
 
 const json = '{"id": "12345", "name": "Mary"}';
+console.log('Value of JSON:', json);
 console.log('Type of JSON:', typeof json);
 
 const jsonObject = JSON.parse(json);
-console.log('Type of JSON parse:', jsonObject);
+console.log('Value of JSON:', jsonObject);
+console.log('Type of JSON parse:', typeof jsonObject);
