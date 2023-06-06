@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Carousel</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="row image-row">
+        <i
+          class="fa-solid fa-less-than fa-2xl arrows left"
+          style="color: #000000"></i>
+        <div class="image">
+          <img class="tab" src="images/001.png" />
+          <img class="tab hidden" src="images/004.png" />
+          <img class="tab hidden" src="images/007.png" />
+          <img class="tab hidden" src="images/025.png" />
+          <img class="tab hidden" src="images/039.png" />
+        </div>
+        <i
+          class="fa-solid fa-greater-than fa-2xl arrows right"
+          style="color: #000000"></i>
+      </div>
+      <div class="row" id="dots">
+        <i
+          class="fa-solid fa-circle fa-lg dots"
+          data-view-index="0"
+          style="color: #000000"></i>
+        <i
+          class="fa-regular fa-circle fa-lg dots"
+          data-view-index="1"
+          style="color: #000000"></i>
+        <i
+          class="fa-regular fa-circle fa-lg dots"
+          data-view-index="2"
+          style="color: #000000"></i>
+        <i
+          class="fa-regular fa-circle fa-lg dots"
+          data-view-index="3"
+          style="color: #000000"></i>
+        <i
+          class="fa-regular fa-circle fa-lg dots"
+          data-view-index="4"
+          style="color: #000000"></i>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
