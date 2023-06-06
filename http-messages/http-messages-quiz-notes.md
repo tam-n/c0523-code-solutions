@@ -9,7 +9,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 - What is a server?
   A computer hardware that provides services to clients
 - Which HTTP method does a browser issue to a web server when you visit a URL?
-  HTTP messages
+  The GET HTTP method
 - What three things are on the start-line of an HTTP **request** message?
   HTTP method, request target, and HTTP version
 - What three things are on the start-line of an HTTP **response** message?
