@@ -12,8 +12,8 @@ After completing this exercise, you should be able to discuss or answer the foll
   Javascript automatically returns the value of a concise body
 - In the expression
   `js
-    foo(() => 42);
-    `
+  foo(() => 42);
+  `
   - Identify the arrow function
     The arrow function is the () => 42
   - How many arguments does the arrow function take?
@@ -26,16 +26,19 @@ After completing this exercise, you should be able to discuss or answer the foll
     callback function
 - In the expression
   `` js
-    bar((y) => {
-      console.log(`4y = ${4 * y}`);
-    });
-     `` - Identify the arrow function
+  bar((y) => {
+    console.log(`4y = ${4 * y}`);
+  });
+   `` - Identify the arrow function
   The arrow function is (y) => {console.log(`4y = ${4 * y}`)} - How many arguments does the arrow function take?
-  one (1) - What value does it return?
-  console.log(`4y = ${4 * y}`) - How many arguments are passed to the function `bar`?
-  one (1) - What type of argument is passed to the function `bar`?
-  callback function - When does the arrow function's code get executed?
-  when the function `bar` is called
+  one (1)
+  - What value does it return?
+    Undefined
+  - How many arguments are passed to the function `bar`?
+    one (1)
+  - What type of argument is passed to the function `bar`?
+    callback function - When does the arrow function's code get executed?
+    when the function `bar` is called
 - How does the value of `this` differ between standard functions and arrow functions?
   The value of `this` of a standard function is within the scope of the standard function, while the `this` of arrow functions is the enclosing context.
 
