@@ -11,12 +11,8 @@ const v4 = [3, 5, 7, 9];
  * Expected: v1 message logs, v2 message does not.
  */
 
-if (v1 && true) {
-  console.log('v1 is truthy');
-}
-if (v2 && true) {
-  console.log('v2 is truthy');
-}
+console.log(v1 && 'v1 is truthy');
+console.log(v2 && 'v2 is truthy');
 
 /* TODO:
  * Demonstrate how to assign a "default value" to a variable.
