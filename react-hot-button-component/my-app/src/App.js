@@ -23,8 +23,13 @@ function App() {
       : counter === 18
       ? 'rgb(255, 255, 255)'
       : '(255, 255, 255)';
-  let textColor =
-    counter > 12 ? 'black' : counter === 3 || counter > 3 ? 'white' : 'black';
+
+  let textColor = 'black';
+  if (counter >= 12) {
+    textColor = 'black';
+  } else if (counter >= 3) {
+    textColor = 'white';
+  }
 
   return (
     <div className="App">
@@ -34,6 +39,7 @@ function App() {
         style={{ backgroundColor: color, color: textColor }}
         text={'Hot Button'}
       />
+      <div>Number of Clicks: {counter}</div>
     </div>
   );
 }
