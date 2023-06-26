@@ -1,6 +1,6 @@
 export default function MyButton(props) {
   return (
-    <button className="button" onClick={props.onClick}>
+    <button className="button" onClick={props.onCustomClick}>
       {props.text}
     </button>
   );

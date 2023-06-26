@@ -7,19 +7,17 @@ function App() {
 
   function handleClickSubtract() {
     setCounter(counter - 1);
-    console.log('subtracted');
   }
 
   function handleClickAdd() {
     setCounter(counter + 1);
-    console.log('added');
   }
 
   return (
     <div className="App">
-      <MyButton text={'Down'} onClick={handleClickSubtract} />
+      <MyButton text={'Down'} onCustomClick={handleClickSubtract} />
       <div>{counter}</div>
-      <MyButton text={'Up'} onClick={handleClickAdd} />
+      <MyButton text={'Up'} onCustomClick={handleClickAdd} />
     </div>
   );
 }

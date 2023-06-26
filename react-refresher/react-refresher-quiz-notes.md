@@ -22,7 +22,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How do you include JavaScript expressions in JSX?
 
-  - by using curly braces {}
+  - by using curly braces {} to wrap the JavaScript expression
 
 - What are React hooks and what are the three "Rules of Hooks"?
 
@@ -38,7 +38,7 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How do you let a parent component know that an event happened?
 
-  By passing the `onClick` event to the child component
+  By passing the event handler callback function to a child component as a property
 
 ## Notes
 
