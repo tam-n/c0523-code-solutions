@@ -9,18 +9,18 @@ function App() {
   return (
     <div className="App">
       <CustomButton
-        text={'First Button'}
-        style={{ color: 'red' }}
+        text="First Button"
+        color="red"
         onCustomClick={handleCustomClick}
       />
       <CustomButton
-        text={'Second Button'}
-        style={{ color: 'blue' }}
+        text="Second Button"
+        color="blue"
         onCustomClick={handleCustomClick}
       />
       <CustomButton
-        text={'Third Button'}
-        style={{ color: 'green' }}
+        text="Third Button"
+        color="green"
         onCustomClick={handleCustomClick}
       />
     </div>
