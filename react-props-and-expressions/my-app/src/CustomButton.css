@@ -1,0 +1,16 @@
+.i-button {
+  background-color: red;
+}
+
+.know-button {
+  background-color: green;
+}
+
+.react-button {
+  background-color: lightblue;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
