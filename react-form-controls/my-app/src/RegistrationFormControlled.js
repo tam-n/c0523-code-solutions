@@ -6,10 +6,8 @@ export default function RegistrationFormControlled(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    const formValues = Object.fromEntries(formData.entries());
-    console.log('Controlled', formValues);
+    console.log('username:', username);
+    console.log('password:', password);
   }
   return (
     <form className={props.className} onSubmit={handleSubmit}>
