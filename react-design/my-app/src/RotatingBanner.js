@@ -4,12 +4,19 @@ import ItemName from './ItemName';
 import IndicatorButton from './IndicatorButton';
 
 export default function RotatingBanner(props) {
+  let [index, setIndex] = useState(0);
+
+  console.log(index);
   return (
     <div>
-      <ItemName items={props.items} />
-      <SequentialButton text="Prev" />
-      <IndicatorButton items={props.items} />
-      <SequentialButton text="Next" />
+      <ItemName items={props.items} index={index} />
+      <SequentialButton text="Prev" onCustomClick={() => setIndex(index - 1)} />
+      <IndicatorButton
+        items={props.items}
+        index={index}
+        onCustomClick={setIndex}
+      />
+      <SequentialButton text="Next" onCustomClick={() => setIndex(index + 1)} />
     </div>
   );
 }

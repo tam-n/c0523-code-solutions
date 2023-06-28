@@ -3,5 +3,5 @@ export default function ItemName(props) {
     return <span key={animal}>{animal}</span>;
   });
 
-  return <div>{namesArray[0]}</div>;
+  return <div>{namesArray[props.index]}</div>;
 }
