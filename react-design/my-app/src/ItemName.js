@@ -1,7 +1,5 @@
 export default function ItemName(props) {
-  const namesArray = props.items.map((animal) => {
-    return <span key={animal}>{animal}</span>;
-  });
+  const selectedAnimal = <span>{props.items[props.index]}</span>;
 
-  return <div>{namesArray[props.index]}</div>;
+  return <div>{selectedAnimal}</div>;
 }
