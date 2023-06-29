@@ -3,7 +3,10 @@ export default function IndicatorButton(props) {
     <button
       className="indicator"
       key={animal}
-      onClick={(e) => props.onCustomClick(index)}>
+      onClick={(e) => props.onCustomClick(index)}
+      style={{
+        backgroundColor: props.index === index ? 'lightblue' : 'white',
+      }}>
       {index}
     </button>
   ));
