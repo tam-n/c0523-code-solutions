@@ -32,6 +32,7 @@ After completing this exercise, you should be able to discuss or answer the foll
     - copies a file
 
 - What are the three virtues of a great programmer?
+  - Laziness, impatience, and hubris
 
 ## Notes
 
