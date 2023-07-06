@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 export default function RenderTopics(props) {
   const [selected, setSelected] = useState(null);
-  console.log(selected);
 
   const listTopics = props.topics.map((element) => {
     return (
