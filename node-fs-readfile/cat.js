@@ -2,19 +2,13 @@ import { readFile } from 'node:fs/promises';
 
 const arrayOfFiles = process.argv.splice(2);
 const promises = arrayOfFiles.map(async (fileName) => {
-  try {
-    const filePath = new URL(fileName, import.meta.url);
-    const content = await readFile(filePath, { encoding: 'utf8' });
-    return content;
-  } catch (error) {
-    console.log(error);
-  }
+  const content = await readFile(fileName, 'utf8');
+  return content;
 });
 
-await Promise.all(promises)
-  .then((contents) => {
-    for (const item of contents) {
-      console.log(item);
-    }
-  })
-  .catch((error) => console.log(error));
+try {
+  const contents = await Promise.all(promises);
+  contents.forEach((item) => console.log(item));
+} catch (error) {
+  console.log(error);
+}
