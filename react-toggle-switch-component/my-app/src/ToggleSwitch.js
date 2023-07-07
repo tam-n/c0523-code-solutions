@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function ToggleSwitch() {
-  const [toggle, setToggle] = useState(false);
+  const [isOn, setIsOn] = useState(false);
 
   return (
     <div className="form-check form-switch">
@@ -11,11 +11,11 @@ export default function ToggleSwitch() {
         role="switch"
         id="flexSwitchCheckDefault"
         onClick={() => {
-          toggle === false ? setToggle(true) : setToggle(false);
+          setIsOn(!isOn);
         }}
       />
       <label className="form-check-label" htmlFor="flexSwitchCheckDefault">
-        {toggle === false ? 'OFF' : 'ON'}
+        {isOn === false ? 'OFF' : 'ON'}
       </label>
     </div>
   );
