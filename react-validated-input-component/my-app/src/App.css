@@ -1,3 +1,29 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.is-required {
+  color: red;
+}
+
+.too-short {
+  color: red;
+}
+
+.fa-xmark {
+  color: red;
+  right: 0;
+}
+
+.fa-check {
+  color: green;
+  right: 0;
+}
+
+.form-label {
+  display: flex;
 }
