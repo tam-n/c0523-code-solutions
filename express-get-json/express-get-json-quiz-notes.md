@@ -5,7 +5,7 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is an API endpoint?
-  - An API endpoint is a URL that a user can
+  - An API endpoint is a URL that a user can make requests to.
 - What is the appropriate `Content-Type` header for HTTP messages that contain JSON in their bodies?
   - application/json
 
