@@ -1,19 +1,5 @@
 import express from 'express';
 
-const app = express();
-
-app.get('/api/grades', (req, res) => {
-  const array = [];
-  for (const properties in grades) {
-    array.push(grades[properties]);
-  }
-  res.json(array);
-});
-
-app.listen(8080, () => {
-  console.log('Listening for port 8080.');
-});
-
 const grades = {
   12: {
     id: 12,
@@ -34,3 +20,17 @@ const grades = {
     score: 92,
   },
 };
+
+const app = express();
+
+app.get('/api/grades', (req, res) => {
+  const array = [];
+  for (const properties in grades) {
+    array.push(grades[properties]);
+  }
+  res.json(array);
+});
+
+app.listen(8080, () => {
+  console.log('Listening for port 8080.');
+});
