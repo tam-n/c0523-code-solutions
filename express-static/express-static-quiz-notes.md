@@ -5,13 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the purpose of the Express Static middleware?
-  - It is a middleware function that serves static files
+  - It serves static files
 - What does `express.static()` return?
-  - It returns static files
+  - It returns a middleware function responsible for serving static files
 - What are several examples of static files?
   - images
 - What is a good way to serve application images using Express?
-  - Using `experss.static()`
+  - Using `experss.static()` mounted on `app.use()`
 
 ## Notes
 
