@@ -15,15 +15,18 @@ app.get('/api/notes', async (req, res) => {
 });
 
 app.get('/api/notes/:id', async (req, res) => {
-  const { id } = req.params;
-  const data = await readJSONData();
-  const notesList = data.notes;
-  if (id <= 0) {
-    res.json({ error: 'Please enter a positive number.' });
-  } else if (notesList[id]) {
-    res.json(notesList[id]);
-  } else {
-    res.status(404).json({ error: `Entry Id: ${id} does not exist.` });
+  try {
+    const { id } = req.params;
+    const data = await readJSONData();
+    const notesList = data.notes;
+    if (id <= 0) {
+      res.json({ error: 'Please enter a positive number.' });
+    } else {
+      res.json(notesList[id]);
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(404).json({ error: `Entry Id does not exist.` });
   }
 });
 
@@ -33,22 +36,20 @@ app.post('/api/notes', async (req, res) => {
     const data = await readJSONData();
     if (!newEntry.content) {
       res.status(400).json({ error: 'Content is a required field.' });
-    } else if (newEntry.content) {
+    } else {
       await createNotes(data, newEntry);
       res.json(newEntry);
-    } else {
-      throw new Error('An unexpected error occurred.');
     }
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: `${error}` });
+    res.status(500).json({ error: 'An unexpected error has occurred.' });
   }
 });
 
 app.delete('/api/notes/:id', async (req, res) => {
   const { id } = req.params;
   const data = await readJSONData();
-  deleteNotes(data, id, res);
+  await deleteNotes(data, id, res);
 });
 
 async function readJSONData() {
