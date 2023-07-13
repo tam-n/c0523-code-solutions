@@ -24,6 +24,7 @@
     "stylelint-config-standard": "^32.0.0"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "react-icons": "^4.10.1"
   }
 }
