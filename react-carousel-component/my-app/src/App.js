@@ -2,9 +2,10 @@ import './App.css';
 import Carousel from './Carousel';
 
 const imagesPath = [
-  '/images/irelia.jpg',
-  '/images/lux.jpg',
-  '/images/teemo.jpg',
+  '/images/pikachu.jpg',
+  '/images/bulbasaur.jpg',
+  '/images/charmander.jpg',
+  '/images/jigglypuff.jpg',
 ];
 
 function App() {

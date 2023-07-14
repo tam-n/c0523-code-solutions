@@ -15,9 +15,26 @@
 }
 
 .one-third {
-  flex-basis: calc(100% / 3);
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 img {
-  max-height: 20rem;
+  height: 100%;
+  width: 100%;
+}
+
+.circles {
+  margin: 0.5rem;
+}
+
+.circles:hover {
+  cursor: pointer;
+}
+
+.button:hover {
+  cursor: pointer;
 }
