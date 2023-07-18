@@ -19,7 +19,6 @@ export default function Todos() {
         }
         const currentTodoList = await response.json();
         setTodos(currentTodoList);
-        setError(null);
       } catch (error) {
         setError(error);
       } finally {
@@ -51,11 +50,9 @@ export default function Todos() {
   /* Implement toggleCompleted to toggle the completed state of a todo. Hints are at the bottom of the file. */
   async function toggleCompleted(todoId) {
     try {
-      const todoIndex = todos.findIndex((todo) => todo.todoId === todoId);
+      const todoToUpdate = todos.find((todo) => todo.todoId === todoId);
 
-      const todoToUpdate = todos[todoIndex];
       const updatedTodo = {
-        ...todoToUpdate,
         isCompleted: !todoToUpdate.isCompleted,
       };
 
@@ -74,7 +71,6 @@ export default function Todos() {
         todo.todoId === todoId ? updatedTodoFromServer : todo
       );
       setTodos(updatedTodos);
-      setError(null);
     } catch (error) {
       setError(error);
     }
