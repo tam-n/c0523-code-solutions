@@ -23,6 +23,7 @@ export default function Users() {
         setUsers(list);
       } catch (error) {
         setError(error);
+        setIsLoading(false);
       }
     }
 

@@ -21,6 +21,7 @@ export default function User({ userId, onCancel }) {
         setUser(targetUser);
       } catch (error) {
         setError(error);
+        setIsLoading(false);
       }
     }
     getUserId();
