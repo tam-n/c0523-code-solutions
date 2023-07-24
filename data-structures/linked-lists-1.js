@@ -9,22 +9,7 @@ export function updateHead(list, value) {
 }
 
 export function withoutHead(list) {
-  let current = list.next;
-  let newLinkedList = null;
-  let newCurrent = null;
-
-  while (current) {
-    if (newLinkedList === null) {
-      newLinkedList = new LinkedList(current.data);
-      newCurrent = newLinkedList;
-    } else {
-      newCurrent.next = new LinkedList(current.data);
-      newCurrent = newCurrent.next;
-    }
-    current = current.next;
-  }
-
-  return newLinkedList;
+  return list.next;
 }
 
 export function prepend(list, value) {
